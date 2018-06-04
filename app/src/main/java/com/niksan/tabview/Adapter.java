@@ -13,6 +13,7 @@ public class Adapter extends FragmentPagerAdapter {
     private final List<Fragment> fragments = new ArrayList<>();
     private List<String> fragmentTitles = new ArrayList<>();
 
+
     public Adapter(FragmentManager fm) {
         super(fm);
     }
@@ -30,6 +31,7 @@ public class Adapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         return fragmentTitles.get(position);
+       // return null;
     }
 
     public void addFragment(Fragment fragment, String title){
